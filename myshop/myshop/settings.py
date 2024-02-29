@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
+    'coupons.apps.CouponsConfig',
 ]
 
 MIDDLEWARE = [
@@ -138,10 +139,14 @@ CART_SESSION_ID = 'cart'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-#todo вставить ключи доступа
 # Stripe settings
 STRIPE_PUBLISHABLE_KEY = '' # Publishable key
 STRIPE_SECRET_KEY = ''      # Secret key
 STRIPE_API_VERSION = '2022-08-01'
-#вебхук для локального теста
 STRIPE_WEBHOOK_SECRET = ''
+
+
+# Redis settings
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
