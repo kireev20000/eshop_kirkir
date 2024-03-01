@@ -115,11 +115,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'ru'
 
 LANGUAGES = [
     ('en', _('English')),
-    ('es', _('Spanish')),
+    ('ru', _('Russian')),
 ]
 
 LOCALE_PATHS = [
@@ -155,7 +155,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Stripe settings
-STRIPE_PUBLISHABLE_KEY = '' # Publishable key
+STRIPE_PUBLISHABLE_KEY = '' # Publishable key - Вставить данные с сайта страйпа
 STRIPE_SECRET_KEY = ''      # Secret key
 STRIPE_API_VERSION = '2022-08-01'
 STRIPE_WEBHOOK_SECRET = ''
@@ -171,7 +171,7 @@ REDIS_DB = 1
 PARLER_LANGUAGES = {
     None: (
         {'code': 'en'},
-        {'code': 'es'},
+        {'code': 'ru'},
     ),
     'default': {
         'fallback': 'en',
