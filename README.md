@@ -17,6 +17,7 @@
 - RabbitMQ
 - Redis
 - Stripe
+- django-parler
 ___
 
 ## Текущий прогресс

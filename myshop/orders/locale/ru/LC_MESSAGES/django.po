@@ -41,7 +41,7 @@ msgstr "Индекс"
 
 #: orders/models.py:21
 msgid "city"
-msgstr "Город
+msgstr "Город"
 
 #: orders/templates/orders/order/create.html:5
 #: orders/templates/orders/order/create.html:9
